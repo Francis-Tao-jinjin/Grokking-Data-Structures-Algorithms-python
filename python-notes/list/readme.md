@@ -7,7 +7,7 @@
 | `array.shift()`             | `list.pop(0)`                     | 移除并返回列表中的第一个元素                          |
 | `array.unshift(item)`       | `list.insert(0, item)`            | 在列表开头添加一个元素                               |
 | `array.map(func)`           | `list comprehension` 或 `map(func, list)`  | 对列表中的每个元素应用函数并返回新列表                |
-| `array.filter(func)`        | `list comprehension`              | 过滤出所有应用函数返回值为True的元素                  |
+| `array.filter(func)`        | `list(filter(lambda x: x is True, li))` | 过滤出所有应用函数返回值为True的元素                  |
 | `array.reduce(func, [initial])` | `functools.reduce(func, list, initial)` | 累积地将函数应用于列表元素                            |
 | `array.forEach(func)`       | `for item in list: func(item)`    | 对列表中的每个元素应用函数，没有返回值                |
 | `array.find(func)`          | `next((x for x in list if func(x)), None)` | 找到并返回第一个满足函数条件的元素，没有则返回 None   |
